@@ -16,17 +16,17 @@ exemple :
   ['26-1', '26-2', '26-3', ..., '26-100']
 ] 
 */
+let arr = [1-100,[2-100,[26-1, 26-2, 26-3]]];
 
-function theaterSieges() {
-let Sieges= new Array()
-   Sieges['1-100'] = 'rangee 1';
-   Sieges['2-100'] = 'rangee 2';
-   Sieges['3-100'] = 'rangee 3';
-   return theaterSieges;
-   }
-    
-  let theaterSieges = retourSieges();
-  alert("theaterSieges[\"1-100\"] = "+["1-100"]+"\theaterSieges[\"2-100\"] = "+theaterSieges["2-100"]+"\theaterSieges[\"3-100\"] = "+theaterSieges["3-100"]);
+function theaterSieges(arr) {
+  return arr.reduce((acc, val)=>
+  acc.concat(Array.isArray(val) ?
+  flatDeep(val) : val), []);
+};
+
+
+
+
        
   // Your code here !
 
