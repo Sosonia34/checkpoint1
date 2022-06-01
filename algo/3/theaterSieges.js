@@ -18,8 +18,17 @@ exemple :
 */
 
 function theaterSieges() {
+let Sieges= new Array()
+   Sieges['1-100'] = 'rangee 1';
+   Sieges['2-100'] = 'rangee 2';
+   Sieges['3-100'] = 'rangee 3';
+   return theaterSieges;
+   }
+    
+  let theaterSieges = retourSieges();
+  alert("theaterSieges[\"1-100\"] = "+["1-100"]+"\theaterSieges[\"2-100\"] = "+theaterSieges["2-100"]+"\theaterSieges[\"3-100\"] = "+theaterSieges["3-100"]);
+       
   // Your code here !
-}
 
 console.log(theaterSieges());
 

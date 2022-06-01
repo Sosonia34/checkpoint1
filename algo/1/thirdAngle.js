@@ -6,11 +6,7 @@ thirdAngle(90, 30) doit renvoyer 60
 thirdAngle(20, 80) doit renvoyer 80
 */
 
-function thirdAngle(a, b) {
-     let a, b = rad;
-     let rad = deg * Math.PI/180;
-     let deg = a, b;
-    return Math.tan(rad);
+function thirdAngle(a, b){
+     return 180 - (a+b)
  }
-
 export default thirdAngle;
