@@ -10,7 +10,10 @@ Autre rappel: Tu dois utiliser l'opérateur modulo (%) pour vérifier si un nomb
 */
 
 function isLeapYear(year) {
-  // TODO: Your code here
+  return (((year & 3) == 0) && ((year % 100 != 0) || (year % 400 == 0)));
+}
+ for(I=1900;I<=2009;I++) {
+ if(isLeapYear(I)) document.write(I+" est une année bissextile<BR>");
 }
 
 module.exports = isLeapYear;
