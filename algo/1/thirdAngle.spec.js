@@ -1,4 +1,4 @@
-const thirdAngle = require('./thirdAngle');
+const thirdAngle = require('./thirdAngle').default;
 
 test('90, 30 should return 60', () => {
   expect(thirdAngle(90, 30)).toBe(60);

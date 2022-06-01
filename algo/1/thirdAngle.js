@@ -7,7 +7,10 @@ thirdAngle(20, 80) doit renvoyer 80
 */
 
 function thirdAngle(a, b) {
-  // Your code here !
-}
+      return Math.tan(degrees * Math.PI / 180);
+  }
+  console.log(thirdAngle(0));
+  console.log(thirdAngle(60));
+  console.log(thirdAngle(80));
 
-module.exports = thirdAngle;
+export default thirdAngle;
