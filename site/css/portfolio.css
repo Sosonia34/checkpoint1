@@ -9,6 +9,12 @@
 .purple-text {
   color: #750ff7;
 }
+.navbar {
+display: flex;
+float: right;
+margin-bottom: 2px;
+
+}
 
 .description {
   color: #ffffff;
@@ -23,8 +29,15 @@
   text-align: center;
 }
 
-.desktop {
+.avatar {
+ align-items: center;
+ margin-left: 35%;
+}
+
+.desktop img{
   margin: 80px 0 -5px 0;
+  margin-left: 20%;
+  margin-top: 15px;
 }
 
 .skills {
